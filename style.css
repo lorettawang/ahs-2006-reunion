@@ -179,6 +179,7 @@
 
 		ul.actions {
 			cursor: default;
+			text-align: left;
 		}
 		
 			ul.actions li {
@@ -280,42 +281,10 @@
 			form ::-moz-focus-inner {
 				border: 0;
 			}
-			
+				
 	/* Tables */
 	
-		table {
-			width: 100%;
-		}
-		
-			table.default {
-				width: 100%;
-			}
-			
-				table.default tbody tr:nth-child(2n+2) {
-					background: #f4f4f4;
-				}
-				
-				table.default td {
-					padding: 0.5em 1em 0.5em 1em;
-				}
-				
-				table.default th {
-					text-align: left;
-					font-weight: 900;
-					padding: 0.5em 1em 0.5em 1em;
-				}
-			
-				table.default thead {
-					background: #444;
-					color: #fff;
-				}
-				
-				table.default tfoot {
-					background: #eee;
-				}
-				
-				table.default tbody {
-				}
+
 
 	/* Buttons */
 		
@@ -426,7 +395,6 @@
 				}
 				
 				.main.style1.content {
-					opacity: 1.0;
 
 					-moz-transition: all 1s ease;
 					-webkit-transition: all 1s ease;
@@ -450,12 +418,12 @@
 		
 			.main.style2 {
 				padding: 10em 0 10em 0;
-				overflow: hidden;
+				overflow:;
 			}
 			
 				.main.style2 .content {
 					position: relative;
-					width: 40%;
+					right: 40%;
 
 					-moz-transition: all 1s ease;
 					-webkit-transition: all 1s ease;
@@ -471,17 +439,21 @@
 				}
 			
 				.main.style2.left {
+					padding: 10em 5em 10em 0;
+					overflow: hidden;
 				}
 
 					.main.style2.left .content {
-						left: 0;
+						right: 5%;
 					}
 
 				.main.style2.right {
+					padding: 10em 0 10em 5em;
+					overflow: hidden;
 				}
 
 					.main.style2.right .content {
-						left: 60%;
+						left: 5%;
 					}
 
 				.main.style2.inactive {
@@ -491,7 +463,7 @@
 					}
 
 						.main.style2.inactive.left .content {
-							left: -40%;
+							right: 100%;
 						}
 
 						.main.style2.inactive.right .content {
@@ -646,30 +618,6 @@
 /* Work                                                                          */
 /*********************************************************************************/
 
-	#work {
-	}
-	
-		#work .row.images {
-		}
-	
-			#work .row.images .image {
-				position: relative;
-				top: 0;
-				left: 0;
-				opacity: 1.0;
-			
-				-moz-transition: all 1s ease;
-				-webkit-transition: all 1s ease;
-				-o-transition: all 1s ease;
-				-ms-transition: all 1s ease;
-				transition: all 1s ease;
-				
-				-moz-transform: translateZ(0);
-				-webkit-transform: translateZ(0);
-				-o-transform: translateZ(0);
-				-ms-transform: translateZ(0);
-				transform: translateZ(0);
-			}
 			
 /*********************************************************************************/
 /* Contact                                                                       */
@@ -703,6 +651,15 @@
 			#contact.inactive .box {
 				bottom: -30em;
 			}
+
+/*********************************************************************************/
+/* Questionnaire                                                                 */
+/*********************************************************************************/
+
+	#questionnaire {
+	text-align: left;
+	
+	}			
 
 /*********************************************************************************/
 /* Footer                                                                        */
@@ -748,12 +705,10 @@
 				}
 		
 		#footer .menu {
-			position: relative;
-			right: 1em;
 			top: 0;
 			height: 3em;
 			line-height: 3em;
-			margin: 0;
+			margin: 1em;
 		}
 		
 			#footer .menu li {
